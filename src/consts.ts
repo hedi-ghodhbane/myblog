@@ -33,49 +33,55 @@ export const SEARCH: Page = {
 
 // Links
 export const LINKS: Links = [
-  { 
-    TEXT: "Home", 
-    HREF: "/", 
+  {
+    TEXT: "Home",
+    HREF: "/",
   },
-  { 
-    TEXT: "Work", 
-    HREF: "/work", 
+  {
+    TEXT: "Work",
+    HREF: "/work",
   },
-  { 
-    TEXT: "Blog", 
-    HREF: "/blog", 
+  {
+    TEXT: "Blog",
+    HREF: "/blog",
   },
-  { 
-    TEXT: "Projects", 
-    HREF: "/projects", 
+  {
+    TEXT: "Projects",
+    HREF: "/projects",
   },
 ]
 
 // Socials
 export const SOCIALS: Socials = [
-  { 
+  {
     NAME: "Email",
-    ICON: "email", 
-    TEXT: "markhorn.dev@gmail.com",
-    HREF: "mailto:markhorn.dev@gmail.com",
+    ICON: "email",
+    TEXT: "hedighodhbane08@gmail.com",
+    HREF: "mailto:hedighodhbane08@gmail.com",
   },
-  { 
+  {
     NAME: "Github",
     ICON: "github",
-    TEXT: "markhorn-dev",
-    HREF: "https://github.com/markhorn-dev/astro-sphere"
+    TEXT: "hedi-gh",
+    HREF: "https://github.com/hedi-ghodhbane"
   },
-  { 
+  {
     NAME: "LinkedIn",
     ICON: "linkedin",
-    TEXT: "markhorn-dev",
-    HREF: "https://www.linkedin.com/in/markhorn-dev/",
+    TEXT: "hedi-gh",
+    HREF: "https://www.linkedin.com/in/hedi-gh/",
   },
-  { 
-    NAME: "Twitter",
-    ICON: "twitter-x",
-    TEXT: "markhorn_dev",
-    HREF: "https://twitter.com/markhorn_dev",
+  {
+    NAME: "Upwork",
+    ICON: "upwork",
+    TEXT: "hedi-gh",
+    HREF: "https://www.upwork.com/freelancers/~01f5b1089b299442d7",
   },
+  // {
+  //   NAME: "Twitter",
+  //   ICON: "twitter-x",
+  //   TEXT: "markhorn_dev",
+  //   HREF: "https://twitter.com/markhorn_dev",
+  // },
 ]
 
