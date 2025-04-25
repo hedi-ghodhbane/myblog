@@ -1,5 +1,5 @@
 ---
-client: "React Frontend Client"
+client: "Synthu - United states"
 project: "React Front-end Development"
 date: "2021-08-04"
 stars: 5

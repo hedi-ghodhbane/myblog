@@ -1,5 +1,5 @@
 ---
-client: "React Image Cropper Client"
+client: "Synthu - United states"
 project: "React Image Cropper"
 date: "2021-08-29"
 stars: 5

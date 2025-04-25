@@ -1,5 +1,5 @@
 ---
-client: "React Fullstack Client"
+client: "Synthu - United states"
 project: "React Full Stack Development"
 date: "2021-09-06"
 stars: 5

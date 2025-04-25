@@ -1,5 +1,5 @@
 ---
-client: "Stripe SEPA Client 2"
+client: "Philip - Germany Hamburg"
 project: "Stripe SEPA Subscriptions Portal (Extended)"
 date: "2023-06-27"
 stars: 5

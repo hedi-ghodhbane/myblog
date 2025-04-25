@@ -1,5 +1,5 @@
 ---
-client: "Stripe Gateway Client"
+client: "Philip - Germany Hamburg"
 project: "Stripe Gateway Fix"
 date: "2021-08-29"
 stars: 5

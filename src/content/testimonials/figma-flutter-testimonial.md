@@ -1,5 +1,5 @@
 ---
-client: "Figma Flutter Client"
+client: "Miklos - Switzerland"
 project: "Figma to Flutter Conversion"
 date: "2021-07-07"
 stars: 5
