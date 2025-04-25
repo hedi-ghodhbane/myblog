@@ -10,7 +10,7 @@ tags:
 - Tailwind
 - Shadcn
 - Tanstack Query
-demoUrl: https://astro-sphere-demo.vercel.app
+demoUrl: https://youtu.be/10IBfN5JUlY
 ---
 
 ## The idea

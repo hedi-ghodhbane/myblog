@@ -15,6 +15,17 @@ const testimonials = (await getCollection("testimonials")).sort(
         <div class="animate page-heading">
             {TESTIMONIALS.TITLE}
         </div>
+        <div class="animate mt-4 text-center text-black/75 dark:text-white/75">
+            <p>
+                All feedbacks are also available on my <a
+                    href="https://www.upwork.com/freelancers/~01f5b1089b299442d7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="text-blue-600 dark:text-blue-400 hover:underline"
+                    >Upwork profile</a
+                >.
+            </p>
+        </div>
     </TopLayout>
     <BottomLayout>
         <div class="animate">
@@ -31,15 +42,6 @@ const testimonials = (await getCollection("testimonials")).sort(
                                         <p class="text-sm text-black/75 dark:text-white/75">
                                             {entry.data.project}
                                         </p>
-                                    </div>
-                                    <div class="flex items-center gap-0.5">
-                                        {Array(entry.data.stars)
-                                            .fill(0)
-                                            .map(() => (
-                                                <svg class="size-5 fill-yellow-500">
-                                                    <use href="/ui.svg#star" />
-                                                </svg>
-                                            ))}
                                     </div>
                                 </div>
                                 <p class="prose dark:prose-invert">
