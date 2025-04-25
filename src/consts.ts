@@ -31,6 +31,18 @@ export const SEARCH: Page = {
   DESCRIPTION: "Search all posts and projects by keyword.",
 }
 
+// Testimonials Page
+export const TESTIMONIALS: Page = {
+  TITLE: "Testimonials",
+  DESCRIPTION: "Client testimonials and reviews from Upwork.",
+}
+
+// Feedback Page
+export const FEEDBACK: Page = {
+  TITLE: "Feedback",
+  DESCRIPTION: "Client feedback and testimonials from Upwork.",
+}
+
 // Links
 export const LINKS: Links = [
   {
@@ -48,6 +60,10 @@ export const LINKS: Links = [
   {
     TEXT: "Projects",
     HREF: "/projects",
+  },
+  {
+    TEXT: "Testimonials",
+    HREF: "/testimonials",
   },
 ]
 

@@ -1,0 +1,65 @@
+---
+import { getCollection } from "astro:content";
+import PageLayout from "../../layouts/PageLayout.astro";
+import TopLayout from "../../layouts/TopLayout.astro";
+import BottomLayout from "../../layouts/BottomLayout.astro";
+import { TESTIMONIALS } from "../../consts";
+
+const testimonials = (await getCollection("testimonials")).sort(
+    (a, b) => b.data.date.getTime() - a.data.date.getTime(),
+);
+---
+
+<PageLayout title={TESTIMONIALS.TITLE} description={TESTIMONIALS.DESCRIPTION}>
+    <TopLayout>
+        <div class="animate page-heading">
+            {TESTIMONIALS.TITLE}
+        </div>
+    </TopLayout>
+    <BottomLayout>
+        <div class="animate">
+            <ul class="space-y-8">
+                {
+                    testimonials.map((entry) => (
+                        <li class="border-b border-black/10 dark:border-white/25 py-8 last-of-type:border-none">
+                            <div class="flex flex-col gap-4">
+                                <div class="flex justify-between items-start">
+                                    <div>
+                                        <h3 class="text-xl font-semibold text-black dark:text-white">
+                                            {entry.data.client}
+                                        </h3>
+                                        <p class="text-sm text-black/75 dark:text-white/75">
+                                            {entry.data.project}
+                                        </p>
+                                    </div>
+                                    <div class="flex items-center gap-0.5">
+                                        {Array(entry.data.stars)
+                                            .fill(0)
+                                            .map(() => (
+                                                <svg class="size-5 fill-yellow-500">
+                                                    <use href="/ui.svg#star" />
+                                                </svg>
+                                            ))}
+                                    </div>
+                                </div>
+                                <p class="prose dark:prose-invert">
+                                    {entry.data.feedback}
+                                </p>
+                                <div class="text-sm text-black/50 dark:text-white/50">
+                                    {entry.data.date.toLocaleDateString(
+                                        "en-US",
+                                        {
+                                            year: "numeric",
+                                            month: "long",
+                                            day: "numeric",
+                                        },
+                                    )}
+                                </div>
+                            </div>
+                        </li>
+                    ))
+                }
+            </ul>
+        </div>
+    </BottomLayout>
+</PageLayout>
